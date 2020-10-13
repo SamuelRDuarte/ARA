@@ -1,0 +1,62 @@
+Oct 13 08:31:02.548 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 13 08:31:02.548 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38165.
+Oct 13 08:31:02.559 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 13 08:31:02.559 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA/aula1/project-files/dynamips 
+Oct 13 08:31:02.559 GENERAL: working_dir=/home/samuel/Universidade/ARA/aula1/project-files/dynamips
+Oct 13 08:31:02.559 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA/aula1/project-files/dynamips/13077426-09ef-4fcd-ad07-91f1c4a9ebea 
+Oct 13 08:31:02.559 GENERAL: working_dir=/home/samuel/Universidade/ARA/aula1/project-files/dynamips/13077426-09ef-4fcd-ad07-91f1c4a9ebea
+Oct 13 08:31:02.560 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+Oct 13 08:31:02.560 VM: VM R3 created.
+Oct 13 08:31:02.560 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Oct 13 08:31:02.560 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Oct 13 08:31:02.561 HYPERVISOR: exec_cmd: vm set_ios R3 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:31:02.562 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 08:31:02.562 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a68e70 
+Oct 13 08:31:02.562 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Oct 13 08:31:02.563 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 13 08:31:02.563 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 08:31:02.564 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Oct 13 08:31:02.616 HYPERVISOR: exec_cmd: vm set_ios R3 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:31:05.043 HYPERVISOR: exec_cmd: vm set_ios R3 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:31:08.927 HYPERVISOR: exec_cmd: vm set_ios R3 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:31:08.927 HYPERVISOR: exec_cmd: vm rename R3 RA 
+Oct 13 08:31:08.975 HYPERVISOR: exec_cmd: vm set_ios RA /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:31:10.661 HYPERVISOR: exec_cmd: vm set_ios RA /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:32:30.322 HYPERVISOR: exec_cmd: nio create_udp udp-48c305e4-36d7-43ff-a6b0-97a6cc02484f 10004 127.0.0.1 10005 
+Oct 13 08:32:30.539 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 0 0 udp-48c305e4-36d7-43ff-a6b0-97a6cc02484f 
+Oct 13 08:32:30.540 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 13 08:32:41.753 HYPERVISOR: exec_cmd: nio create_udp udp-83957d6f-62f7-4eb6-adf9-83838df917b2 10008 127.0.0.1 10009 
+Oct 13 08:32:41.754 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 0 1 udp-83957d6f-62f7-4eb6-adf9-83838df917b2 
+Oct 13 08:32:41.754 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 13 08:36:32.236 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 13 08:36:32.236 VM: VM Ghost created.
+Oct 13 08:36:32.237 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:36:32.237 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 13 08:36:32.238 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/samuel/Universidade/ARA/aula1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 13 08:36:32.238 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 13 08:36:32.328 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Oct 13 08:36:32.328 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 13 08:36:33.383 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 13 08:36:33.384 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 13 08:36:33.538 VM: VM Ghost shutdown.
+Oct 13 08:36:33.539 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 13 08:36:33.540 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 13 08:36:33.540 VM: VM Ghost destroyed.
+Oct 13 08:36:33.542 HYPERVISOR: exec_cmd: vm set_ghost_status RA 2 
+Oct 13 08:36:33.542 HYPERVISOR: exec_cmd: vm set_ghost_file RA /home/samuel/Universidade/ARA/aula1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 13 08:36:33.543 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 13 08:36:33.544 HYPERVISOR: exec_cmd: vm set_config RA configs/i3_startup-config.cfg 
+Oct 13 08:36:33.544 HYPERVISOR: exec_cmd: vm start RA 
+Oct 13 08:45:33.840 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 13 08:45:33.946 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 13 09:23:53.336 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 13 09:23:53.336 HYPERVISOR: exec_cmd: vm stop RA 
+Oct 13 09:23:53.449 VM: VM RA shutdown.
+Oct 13 09:23:53.449 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 13 09:24:10.478 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 13 09:24:10.478 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 13 09:24:10.479 HYPERVISOR: exec_cmd: vm delete RA 
+Oct 13 09:24:10.479 VM: VM RA destroyed.
+Oct 13 09:24:10.480 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 13 09:24:10.641 HYPERVISOR: Stopped.
+Oct 13 09:24:10.641 GENERAL: reset done.

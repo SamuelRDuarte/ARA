@@ -1,0 +1,48 @@
+Oct 13 08:30:59.900 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 13 08:30:59.900 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52689.
+Oct 13 08:30:59.910 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 13 08:30:59.911 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA/aula1/project-files/dynamips 
+Oct 13 08:30:59.911 GENERAL: working_dir=/home/samuel/Universidade/ARA/aula1/project-files/dynamips
+Oct 13 08:30:59.911 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA/aula1/project-files/dynamips/691d1bc6-6cca-407b-bbab-3729a5be6b00 
+Oct 13 08:30:59.911 GENERAL: working_dir=/home/samuel/Universidade/ARA/aula1/project-files/dynamips/691d1bc6-6cca-407b-bbab-3729a5be6b00
+Oct 13 08:30:59.912 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Oct 13 08:30:59.912 VM: VM R2 created.
+Oct 13 08:30:59.912 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Oct 13 08:30:59.912 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Oct 13 08:30:59.913 HYPERVISOR: exec_cmd: vm set_ios R2 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:30:59.914 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 08:30:59.914 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a68e70 
+Oct 13 08:30:59.914 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Oct 13 08:30:59.915 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Oct 13 08:30:59.915 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 08:30:59.915 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Oct 13 08:30:59.992 HYPERVISOR: exec_cmd: vm set_ios R2 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:31:03.924 HYPERVISOR: exec_cmd: vm set_ios R2 /home/samuel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 13 08:32:41.764 HYPERVISOR: exec_cmd: nio create_udp udp-b2a58648-c909-4b08-b0f3-adb11d8c5c31 10010 127.0.0.1 10011 
+Oct 13 08:32:41.977 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-b2a58648-c909-4b08-b0f3-adb11d8c5c31 
+Oct 13 08:32:41.978 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 08:32:49.654 HYPERVISOR: exec_cmd: nio create_udp udp-1288083e-7ac7-4cda-bcb2-5fd31826b253 10014 127.0.0.1 10015 
+Oct 13 08:32:49.656 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-1288083e-7ac7-4cda-bcb2-5fd31826b253 
+Oct 13 08:32:49.656 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 08:36:33.545 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 13 08:36:33.546 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/samuel/Universidade/ARA/aula1/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 13 08:36:33.546 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 08:36:33.547 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Oct 13 08:36:33.547 HYPERVISOR: exec_cmd: vm start R2 
+Oct 13 08:56:03.905 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 08:56:03.924 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:04:03.954 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:04:04.062 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:17:04.050 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:17:04.053 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:23:53.335 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 09:23:53.336 HYPERVISOR: exec_cmd: vm stop R2 
+Oct 13 09:23:53.454 VM: VM R2 shutdown.
+Oct 13 09:23:53.455 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:24:10.418 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 13 09:24:10.419 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 13 09:24:10.420 HYPERVISOR: exec_cmd: vm delete R2 
+Oct 13 09:24:10.420 VM: VM R2 destroyed.
+Oct 13 09:24:10.420 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 13 09:24:10.523 HYPERVISOR: Stopped.
+Oct 13 09:24:10.523 GENERAL: reset done.
