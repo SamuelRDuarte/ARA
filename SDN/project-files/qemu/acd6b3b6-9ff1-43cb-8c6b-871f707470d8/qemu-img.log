@@ -1,0 +1,1 @@
+Formatting '/home/samuel/Universidade/ARA/SDN/project-files/qemu/acd6b3b6-9ff1-43cb-8c6b-871f707470d8/hda_disk.qcow2', fmt=qcow2 size=4294967296 backing_file=/home/samuel/GNS3/images/QEMU/OVS_arch.qcow2 cluster_size=65536 lazy_refcounts=off refcount_bits=16

@@ -1,0 +1,16 @@
+Nov 24 09:48:27.290 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 24 09:48:27.290 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51669.
+Nov 24 09:48:27.301 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 24 09:48:27.302 HYPERVISOR: exec_cmd: hypervisor working_dir /home/samuel/Universidade/ARA/CDN/project-files/dynamips 
+Nov 24 09:48:27.302 GENERAL: working_dir=/home/samuel/Universidade/ARA/CDN/project-files/dynamips
+Nov 24 09:48:27.302 HYPERVISOR: exec_cmd: ethsw create NetA.2 
+Nov 24 09:48:28.225 HYPERVISOR: exec_cmd: nio create_udp udp-358969a3-1a00-46cf-b81f-9a1439e35978 10001 127.0.0.1 10000 
+Nov 24 09:48:28.225 HYPERVISOR: exec_cmd: ethsw add_nio NetA.2 udp-358969a3-1a00-46cf-b81f-9a1439e35978 
+Nov 24 09:48:28.233 HYPERVISOR: exec_cmd: ethsw set_access_port NetA.2 udp-358969a3-1a00-46cf-b81f-9a1439e35978 1 
+Nov 24 09:48:28.907 HYPERVISOR: exec_cmd: nio create_udp udp-3f971a44-6194-440b-8385-70d081657b88 10013 127.0.0.1 10012 
+Nov 24 09:48:28.908 HYPERVISOR: exec_cmd: ethsw add_nio NetA.2 udp-3f971a44-6194-440b-8385-70d081657b88 
+Nov 24 09:48:28.915 HYPERVISOR: exec_cmd: ethsw set_access_port NetA.2 udp-3f971a44-6194-440b-8385-70d081657b88 1 
+Nov 24 11:02:25.586 HYPERVISOR: exec_cmd: ethsw delete NetA.2 
+Nov 24 11:02:25.618 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 24 11:02:25.720 HYPERVISOR: Stopped.
+Nov 24 11:02:25.720 GENERAL: reset done.
